@@ -2,8 +2,8 @@ import { Component } from "react";
 
 type Props = {
   title: string,
-  isHero: boolean
-}
+  isHero: boolean,
+};
 
 class Hello extends Component<Props> {
   constructor(props) {
@@ -14,13 +14,11 @@ class Hello extends Component<Props> {
   }
   render() {
     return (
-      <h1 class="no-unknown-property" font-size="24">
+      <h1 className="no-unknown-property" fontSize="24">
         {this.isTitleAvailable ? this.title : `Welcome to DeepSource`}
       </h1>
     );
   }
 }
-
-
 
 export default Hello;
